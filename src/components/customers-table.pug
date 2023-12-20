@@ -1,5 +1,12 @@
+mixin statusButton(status)
+    if status
+        button(class="active-status status-button") Active
+    else
+        button(class="inactive-status status-button") Inactive
+
 block append variables
     - const data = require('../../asset/data/users.json')
+
 
 table
     tr
@@ -16,4 +23,5 @@ table
             td=item.phone
             td=item.email
             td=item.country
-            td=item.status
+            td
+                +statusButton(item.status)

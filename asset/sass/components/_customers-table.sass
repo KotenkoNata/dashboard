@@ -1,0 +1,39 @@
+@use '../abstract/variables' as *
+
+table
+  width: 100%
+
+th
+  color: $gray
+  font-size: $p-size
+  font-weight: $medium-weight
+  text-align: left
+
+th, td
+  border-bottom: 1px solid $gray-light
+  padding: 24px 0
+
+td
+  color: $list-customers
+  font-size: $p-size
+  font-weight: $medium-weight
+
+.status-button
+  text-align: center
+  font-size: $p-size
+  border-radius: 4px
+  padding: 4px 0
+
+.active-status
+  color: $green-text
+  background: $light-green-tr
+  padding-left: 18px
+  padding-right: 18px
+  border: 1px solid $green-text
+
+.inactive-status
+  color: $red-text
+  background: $pink
+  padding-left: 12px
+  padding-right: 12px
+  border: 1px solid $red-text
