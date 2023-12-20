@@ -6,8 +6,9 @@ block append variables
 ul.list-navigation
     each item in dataList
         li.list-navigation__item
-            button.list-navigation__button
-                +menu-list-svg(item.name)
-                p.list-navigation__text=item.name
+            button.button
+                .button__inner-container
+                    +menu-list-svg(item.name)
+                    span.button__text=item.name
                 if item.arrow
-                    include ../../asset/img/nav-list-icon/arrow.svg
+                include ../../asset/img/nav-list-icon/arrow.svg

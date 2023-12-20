@@ -1,17 +1,45 @@
 @use '../abstract/variables' as *
 
-.list-navigation__button
+.list-navigation__item
+  margin-bottom: 18px
+
+.button
   display: flex
   align-items: center
+  justify-content: space-between
   background: transparent
+  width: 100%
+  border: 1px solid blue
+  padding: 11px 8px 11px 11px
+  border-radius: 8px
 
-.list-navigation__text
+.button__inner-container
+  display: flex
+  align-items: center
+
+.button__text
   color: $nav-menu
   font-size: $p-size
+  margin-left: 14px
+
 
 #income
-  stroke: #5932EA
-  fill: none
+  stroke: $nav-menu
+#arrow
+  stroke: $nav-menu
+#customers
+  stroke: $nav-menu
+#dashboard
+  stroke: $nav-menu
+#help
+  fill: $nav-menu
+#product
+  fill: $nav-menu
+#promote
+  fill: $nav-menu
+
+#arrow
+  justify-content: flex-start
 
 
 
