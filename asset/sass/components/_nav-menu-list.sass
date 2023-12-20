@@ -9,9 +9,29 @@
   justify-content: space-between
   background: transparent
   width: 100%
-  border: 1px solid blue
   padding: 11px 8px 11px 11px
   border-radius: 8px
+  transition: $animation
+  &:hover
+    background: $purple
+    .button__text
+      color: $white-color
+    #arrow
+      stroke: $white-color
+    #income
+      stroke: $white-color
+    #arrow
+      stroke: $white-color
+    #customers
+      stroke: $white-color
+    #dashboard
+      stroke: $white-color
+    #help
+      fill: $white-color
+    #product
+      fill: $white-color
+    #promote
+      fill: $white-color
 
 .button__inner-container
   display: flex
@@ -21,25 +41,31 @@
   color: $nav-menu
   font-size: $p-size
   margin-left: 14px
-
+  transition: $animation
 
 #income
   stroke: $nav-menu
+  transition: $animation
 #arrow
   stroke: $nav-menu
+  transition: $animation
 #customers
   stroke: $nav-menu
+  transition: $animation
 #dashboard
   stroke: $nav-menu
+  transition: $animation
 #help
   fill: $nav-menu
+  transition: $animation
 #product
   fill: $nav-menu
+  transition: $animation
 #promote
   fill: $nav-menu
+  transition: $animation
 
-#arrow
-  justify-content: flex-start
+
 
 
 
