@@ -1,0 +1,19 @@
+block append variables
+    - const data = require('../../asset/data/users.json')
+
+table
+    tr
+        th Customer Name
+        th Company
+        th Phone Number
+        th Email
+        th Country
+        th Status
+    each item in data
+        tr
+            td=item.name
+            td=item.company
+            td=item.phone
+            td=item.email
+            td=item.country
+            td=item.status

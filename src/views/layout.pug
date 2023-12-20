@@ -1,0 +1,42 @@
+doctype html
+html
+    head
+        meta(charset='UTF-8')
+        title Dashboard
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        link(href=require('../../asset/img/Logo.svg') rel='icon')
+        link(href=require('../../asset/sass/styles.sass'), rel='stylesheet')
+        link(rel="reconnect" href="https://fonts.googleapis.com")
+        link(rel="reconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet")
+    body
+        .content-wrapper
+            .container
+                nav.navigation
+                    .logo-container
+                        include ../../asset/img/Logo.svg
+                        .logo-container__text
+                            p.logo-text Dashboard
+                            p.version-description v.01
+                    include ../components/nav-menu-list
+                    .user-block
+                        img(src=require('../../asset/img/user-img.png') class='user-block__image')
+                        p.user-block__name Evano
+                        p.user-block__position Project Manager
+                .content-block
+                    .greeting
+                        p.greeting__text Hello Evano 👋🏼,
+                    .customers-block
+                        .search-form-container
+                            form.search-form
+                                input.input
+                                button.button
+                            h1.title All customers
+                            p.description Active Members
+                        .customers-table
+                            include ../components/customers-table
+                        .customers-table-navigation
+                            p Showing data 1 to 8 of  256K entries
+                            ul.pagination-list
+                            each n in ["<", "1","2","3","4","...","40", ">"]
+                                li.pagination-list__item= n

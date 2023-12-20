@@ -1,0 +1,13 @@
+include ../components/svg-mixin
+
+block append variables
+    - const dataList = require('../../asset/data/menu-list.json')
+
+ul.list-navigation
+    each item in dataList
+        li.list-navigation__item
+            button.list-navigation__button
+                +menu-list-svg(item.name)
+                p.list-navigation__text=item.name
+                if item.arrow
+                    include ../../asset/img/nav-list-icon/arrow.svg

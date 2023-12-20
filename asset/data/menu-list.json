@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Dashboard",
+    "arrow": false
+  },
+  {
+    "name": "Product",
+    "arrow": true
+  },
+  {
+    "name": "Customers",
+    "arrow": true
+  },
+  {
+    "name": "Income",
+    "arrow": true
+  },
+  {
+    "name": "Promote",
+    "arrow": true
+  },
+  {
+    "name": "Help",
+    "arrow": true
+  }
+]
