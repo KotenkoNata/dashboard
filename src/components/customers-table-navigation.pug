@@ -1,0 +1,12 @@
+mixin check(element)
+    if element.length === 3
+        span.pagination-list__span=element
+    else
+        button.pagination-list__button=element
+
+.text-part-container
+    p Showing data 1 to 8 of  256K entries
+ul.pagination-list
+        each n in ["<", "1","2","3","4","...","40", ">"]
+            li.pagination-list__item
+                +check(n)

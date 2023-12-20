@@ -27,7 +27,4 @@ html
                         .customers-table
                             include ../components/customers-table
                         .customers-table-navigation
-                            p Showing data 1 to 8 of  256K entries
-                            ul.pagination-list
-                            each n in ["<", "1","2","3","4","...","40", ">"]
-                                li.pagination-list__item= n
+                            include ../components/customers-table-navigation

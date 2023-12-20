@@ -1,0 +1,28 @@
+@use '../abstract/variables' as *
+
+.text-part-container p
+  color: $gray
+
+.pagination-list
+  display: flex
+
+.pagination-list__item
+  margin-right: 12px
+  &:last-child
+    margin-right: 0
+  &:nth-child(6)
+    align-self: end
+
+.pagination-list__button
+  background: $gray-btn
+  border: 1px solid $gray-light
+  color: $pug-button-text
+  padding: 6px 9px
+  transition: $animation
+  border-radius: 4px
+  &:hover
+    background: $purple
+    color: $white-color
+
+
+
