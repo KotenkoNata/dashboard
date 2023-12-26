@@ -10,9 +10,10 @@ html(lang='en')
         link(rel="reconnect" href="https://fonts.gstatic.com" crossorigin)
         link(href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet")
     body
-        .content-wrapper
+        include ../components/burger-menu
+        main.content-wrapper
             .container
-                nav.navigation
+                aside.navigation
                     .logo-container
                         include ../../asset/img/Logo.svg
                         .logo-container__text
