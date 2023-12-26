@@ -7,7 +7,7 @@ ul.list-navigation
     each item in dataList
         li.list-navigation__item
             button.button
-                .button__inner-container
+                span.button__inner-container
                     +menu-list-svg(item.name)
                     span.button__text=item.name
                 if item.arrow
