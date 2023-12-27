@@ -64,14 +64,18 @@
       height: 2px
       top: 9px
       transition: $animation
-    .active::before
+
+.burger-menu__close-btn.active
+  @media screen and (max-width: 767px)
+    &::before
       transform: rotate(45deg)
       top: 9px
-    .active::after
+    &::after
       transform: rotate(-45deg)
       bottom: 9px
-    .active span
+    span
       transform: scale(0)
+
 
 .burger-menu__list-container
   @media screen and (max-width: 767px)
