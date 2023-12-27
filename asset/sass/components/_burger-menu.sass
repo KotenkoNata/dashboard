@@ -1,0 +1,91 @@
+@use '../abstract/variables' as *
+.burger-menu__wrapper
+  display: none
+  @media screen and (max-width: 767px)
+    display: block
+
+.burger-menu__main
+  @media screen and (max-width: 767px)
+    position: fixed
+    width: 100%
+    top: 0
+    left: 0
+    z-index: 50
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: cornflowerblue
+      z-index: 2
+
+.burger-menu__container
+  @media screen and (max-width: 767px)
+    max-width: 767px
+    margin: 0 auto
+    padding: 0 25px
+
+.burger-menu__body
+  @media screen and (min-width: 320px) and (max-width: 440px)
+    height: 50px
+  @media screen and (max-width: 767px)
+    position: relative
+    display: flex
+    justify-content: space-between
+    height: 100px
+    align-items: center
+
+.burger-menu__close-btn
+  @media screen and (max-width: 767px)
+    display: block
+    position: relative
+    width: 30px
+    height: 20px
+    z-index: 3
+    &::before, &::after
+      content: ''
+      background-color: $black
+      position: absolute
+      width: 100%
+      height: 2px
+      left: 0
+      transition: $animation
+    &::before
+      top: 0
+    &::after
+      bottom: 0
+    span
+      position: absolute
+      background-color: $black
+      left: 0
+      width: 100%
+      height: 2px
+      top: 9px
+      transition: $animation
+    .active::before
+      transform: rotate(45deg)
+      top: 9px
+    .active::after
+      transform: rotate(-45deg)
+      bottom: 9px
+    .active span
+      transform: scale(0)
+
+.burger-menu__list-container
+  @media screen and (max-width: 767px)
+    position: fixed
+    top: -100%
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: #1e2939
+    padding: 90px 10px 20px 85px
+    transition: $animation
+    overflow: auto
+    .active
+      top: 0
+
+
+
