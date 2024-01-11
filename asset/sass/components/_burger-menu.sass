@@ -84,8 +84,8 @@
     left: 0
     width: 100%
     height: 100%
-    background-color: $nav-menu
-    padding: 120px 10px 20px 85px
+    background-color: $white-color
+    padding: 120px 40px 30px 25px
     transition: $animation
     overflow: auto
     &.active
@@ -95,7 +95,11 @@
   @media screen and (max-width: 767px)
     display: block
     position: relative
-    z-index: 3
+
+.burger-menu__list .list-navigation__item
+    @media screen and (max-width: 767px)
+      color: #ff6b08
+
 
 
 
