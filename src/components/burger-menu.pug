@@ -1,3 +1,8 @@
+include ../components/svg-mixin
+
+block append variables
+    - const dataMenu = require('../../asset/data/menu-list.json')
+
 .burger-menu__wrapper
     .burger-menu__main
         .burger-menu__container
@@ -7,6 +12,13 @@
                     span
                 .burger-menu__list-container
                     ul.burger-menu__list
-                        li
-                            p Test
+                        each item in dataMenu
+                            li.list-navigation__item
+                                button.button
+                                    span.button__inner-container
+                                        +menu-list-svg(item.name)
+                                        span.button__text=item.name
+                                    if item.arrow
+                                    include ../../asset/img/nav-list-icon/arrow.svg
+
 
