@@ -1,5 +1,5 @@
-mixin statusButton(status)
-    if status
+mixin statusButton(Status)
+    if Status
         button(class="active-status status-button") Active
     else
         button(class="inactive-status status-button") Inactive
@@ -8,15 +8,23 @@ block append variables
     - const data = require('../../asset/data/users.json')
     - const usersMenu = require('../../asset/data/users-menu.json')
 
-table
+
+table.customers-table-main
     each name in usersMenu
         th=name
     each item in data
         tr
-            td=item.name
-            td=item.company
-            td=item.phone
-            td=item.email
-            td=item.country
+            td=item['Customer Name']
+            td=item.Company
+            td=item['Phone Number']
+            td=item.Email
+            td=item.Country
             td
-                +statusButton(item.status)
+                +statusButton(item.Status)
+table.customers-table-phone
+    each user in data
+        each value, key in user
+            tr
+                td=key
+                td=value
+

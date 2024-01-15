@@ -1,66 +1,66 @@
 [
   {
-    "name": "Jane Cooper",
-    "company": "Microsoft",
-    "phone": "(225) 555-0118",
-    "email": "jane@microsoft.com",
-    "country": "United States",
-    "status": true
+    "Customer Name": "Jane Cooper",
+    "Company": "Microsoft",
+    "Phone Number": "(225) 555-0118",
+    "Email": "jane@microsoft.com",
+    "Country": "United States",
+    "Status": true
   },
   {
-    "name": "Floyd Miles",
-    "company": "Yahoo",
-    "phone": "(205) 555-0100",
-    "email": "floyd@yahoo.com",
-    "country": "Kiribati",
-    "status": false
+    "Customer Name": "Floyd Miles",
+    "Company": "Yahoo",
+    "Phone Number": "(205) 555-0100",
+    "Email": "floyd@yahoo.com",
+    "Country": "Kiribati",
+    "Status": false
   },
   {
-    "name": "Ronald Richards",
-    "company": "Adobe",
-    "phone": "(302) 555-0107",
-    "email": "ronald@adobe.com",
-    "country": "Israel",
-    "status": false
+    "Customer Name": "Ronald Richards",
+    "Company": "Adobe",
+    "Phone Number": "(302) 555-0107",
+    "Email": "ronald@adobe.com",
+    "Country": "Israel",
+    "Status": false
   },
   {
-    "name": "Marvin McKinney",
-    "company": "Tesla",
-    "phone": "(252) 555-0126",
-    "email": "marvin@tesla.com",
-    "country": "Iran",
-    "status": true
+    "Customer Name": "Marvin McKinney",
+    "Company": "Tesla",
+    "Phone Number": "(252) 555-0126",
+    "Email": "marvin@tesla.com",
+    "Country": "Iran",
+    "Status": true
   },
   {
-    "name": "Jerome Bell",
-    "company": "Google",
-    "phone": "(629) 555-0129",
-    "email": "jerome@google.com",
-    "country": "Réunion",
-    "status": true
+    "Customer Name": "Jerome Bell",
+    "Company": "Google",
+    "Phone Number": "(629) 555-0129",
+    "Email": "jerome@google.com",
+    "Country": "Réunion",
+    "Status": true
   },
   {
-    "name": "Kathryn Murphy",
-    "company": "Microsoft",
-    "phone": "(406) 555-0120",
-    "email": "kathryn@microsoft.com",
-    "country": "Curaçao",
-    "status": true
+    "Customer Name": "Kathryn Murphy",
+    "Company": "Microsoft",
+    "Phone Number": "(406) 555-0120",
+    "Email": "kathryn@microsoft.com",
+    "Country": "Curaçao",
+    "Status": true
   },
   {
-    "name": "Jacob Jones",
-    "company": "Yahoo",
-    "phone": "(208) 555-0112",
-    "email": "jacob@yahoo.com",
-    "country": "Brazil",
-    "status": true
+    "Customer Name": "Jacob Jones",
+    "Company": "Yahoo",
+    "Phone Number": "(208) 555-0112",
+    "Email": "jacob@yahoo.com",
+    "Country": "Brazil",
+    "Status": true
   },
   {
-    "name": "Kristin Watson",
-    "company": "Facebook",
-    "phone": "(704) 555-0127",
-    "email": "kristin@facebook.com",
-    "country": "Åland Islands",
-    "status": false
+    "Customer Name": "Kristin Watson",
+    "Company": "Facebook",
+    "Phone Number": "(704) 555-0127",
+    "Email": "kristin@facebook.com",
+    "Country": "Åland Islands",
+    "Status": false
   }
 ]

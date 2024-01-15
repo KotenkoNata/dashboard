@@ -1,8 +1,10 @@
 @use '../abstract/variables' as *
 
-table
+.customers-table-main
   width: 100%
   table-layout: fixed
+  @media screen and (max-width: 767px)
+    display: none
 
 th
   color: $gray

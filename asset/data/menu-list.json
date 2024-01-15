@@ -1,26 +1,26 @@
 [
   {
-    "name": "Dashboard",
+    "Customer Name": "Dashboard",
     "arrow": false
   },
   {
-    "name": "Product",
+    "Customer Name": "Product",
     "arrow": true
   },
   {
-    "name": "Customers",
+    "Customer Name": "Customers",
     "arrow": true
   },
   {
-    "name": "Income",
+    "Customer Name": "Income",
     "arrow": true
   },
   {
-    "name": "Promote",
+    "Customer Name": "Promote",
     "arrow": true
   },
   {
-    "name": "Help",
+    "Customer Name": "Help",
     "arrow": true
   }
 ]
