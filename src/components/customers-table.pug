@@ -11,8 +11,10 @@ block append variables
 
 
 table.customers-table-main
-    each name in usersMenu
-        th=name
+    thead
+        tr
+            each name in usersMenu
+                th=name
     each item in data
         tr
             td=item['Customer Name']
