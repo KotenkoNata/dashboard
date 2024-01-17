@@ -11,7 +11,9 @@
   "author": "Nataliia Kotenko",
   "license": "MIT",
   "devDependencies": {
+    "autoprefixer": "^10.4.16",
     "css-loader": "^6.8.1",
+    "postcss-loader": "^8.0.0",
     "pug-plugin": "^4.9.9",
     "sass": "^1.69.5",
     "sass-loader": "^13.3.2",
