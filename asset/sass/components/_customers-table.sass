@@ -3,7 +3,27 @@
 .customers-table-main
   width: 100%
   table-layout: fixed
+  th:nth-of-type(1)
+    width: 19.7%
+  th:nth-of-type(2)
+    width: 15%
+  th:nth-of-type(3)
+    width: 17.5%
+  th:nth-of-type(4)
+    width: 24%
+  th:nth-of-type(5)
+    width: 16%
   @media screen and (max-width: 767px)
+    display: none
+
+
+.customers-table-phone
+  width: 100%
+  td
+    padding-left: 20px
+  td:first-of-type
+    border-right: 1px solid $gray-light
+  @media screen and (min-width: 767px)
     display: none
 
 th
@@ -15,17 +35,6 @@ th
 
 th, td
   border-bottom: 1px solid $gray-light
-
-th:nth-of-type(1)
-  width: 19.7%
-th:nth-of-type(2)
-  width: 15%
-th:nth-of-type(3)
-  width: 17.5%
-th:nth-of-type(4)
-  width: 24%
-th:nth-of-type(5)
-  width: 16%
 
 td
   color: $list-customers

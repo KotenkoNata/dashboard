@@ -4,6 +4,7 @@ mixin statusButton(Status)
     else
         button(class="inactive-status status-button") Inactive
 
+
 block append variables
     - const data = require('../../asset/data/users.json')
     - const usersMenu = require('../../asset/data/users-menu.json')
@@ -21,10 +22,17 @@ table.customers-table-main
             td=item.Country
             td
                 +statusButton(item.Status)
+
 table.customers-table-phone
     each user in data
         each value, key in user
-            tr
-                td=key
-                td=value
+            if key === 'Status'
+                tr
+                    td=key
+                    td
+                        +statusButton(value)
+            else
+                tr
+                    td=key
+                    td=value
 
