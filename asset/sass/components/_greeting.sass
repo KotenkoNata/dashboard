@@ -1,6 +1,8 @@
 @use '../abstract/variables' as *
 .greeting
   margin-bottom: 51px
+  @media screen and (max-width: 767px)
+    margin-bottom: 20px
 
 .greeting__text
   font-size: $h3-font-size

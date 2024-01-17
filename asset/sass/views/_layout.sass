@@ -7,6 +7,8 @@
 .container
   background: $background
   display: flex
+  @media screen and (max-width: 767px)
+    display: block
 
 .navigation
   position: relative
@@ -21,11 +23,21 @@
 .content-block
   flex: 2
   padding: 41px 95px 258px 71px
+  @media screen and (max-width: 767px)
+    padding: 40px
+    margin-top: 90px
+  @media screen and (min-width: 320px) and (max-width: 440px)
+    padding: 20px
 
 .customers-block
   background: $white-color
   border-radius: 30px
   padding: 30px 53px 40px 38px
+  @media screen and (max-width: 767px)
+    padding: 20px
+  @media screen and (min-width: 320px) and (max-width: 440px)
+    padding: 10px
+    border-radius: 10px
 
 .customers-table-navigation
   margin-top: 20px
