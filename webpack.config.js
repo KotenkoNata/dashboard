@@ -8,7 +8,7 @@ module.exports = {
     },
     output: {
         path: path.join(__dirname, 'dist/'),
-        publicPath: '/',
+        publicPath: '',
         filename: 'assets/js/[name].[contenthash:8].js'
         //☝🏽 Output filename of files with hash for unique id
     },
