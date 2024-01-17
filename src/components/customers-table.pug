@@ -28,11 +28,11 @@ table.customers-table-phone
         each value, key in user
             if key === 'Status'
                 tr
-                    td=key
+                    th=key
                     td
                         +statusButton(value)
             else
                 tr
-                    td=key
+                    th=key
                     td=value
 
