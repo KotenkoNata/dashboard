@@ -24,6 +24,10 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.css$/,
+                use: ["style-loader", "css-loader", "postcss-loader"]
+            },
+            {
                 test: /\.pug$/,
                 loader: PugPlugin.loader
                 //☝🏽 Load Pug files
