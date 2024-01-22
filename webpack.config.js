@@ -9,7 +9,7 @@ module.exports = {
     output: {
         path: path.join(__dirname, 'dist/'),
         publicPath: '',
-        filename: 'assets/js/[name].[contenthash:8].js'
+        filename: 'assets/js/[name].[contenthash:8].js',
         //☝🏽 Output filename of files with hash for unique id
     },
     plugins: [
@@ -17,56 +17,61 @@ module.exports = {
             pretty: true,
             //☝🏽 Format HTML (only in dev mode)
             css: {
-                filename: 'assets/css/[name].[contenthash:8].css'
-            }
-        })
+                filename: 'assets/css/[name].[contenthash:8].css',
+            },
+        }),
     ],
     module: {
         rules: [
             {
-                test: /\.css$/,
-                use: ["style-loader", "css-loader", "postcss-loader"]
-            },
-            {
                 test: /\.pug$/,
-                loader: PugPlugin.loader
+                loader: PugPlugin.loader,
                 //☝🏽 Load Pug files
             },
             {
-                test: /\.(css|sass|scss)$/,
-                use: ['css-loader', 'sass-loader']
-                //☝🏽 Load Sass files
+                test: /\.(sa|sc|c)ss$/,
+                use: [
+                    'css-loader',
+                    'postcss-loader',
+                    'sass-loader',
+                ],
             },
             {
                 // To use images on pug files:
                 test: /\.(png|jpg|jpeg|ico)/,
                 type: 'asset/resource',
                 generator: {
-                    filename: 'assets/img/[name].[hash:8][ext]'
-                }
+                    filename: 'assets/img/[name].[hash:8][ext]',
+                },
             },
             {
                 // To use fonts on pug files:
                 test: /\.(woff|woff2|eot|ttf|otf|svg)$/i,
                 type: 'asset/resource',
                 generator: {
-                    filename: 'assets/fonts/[name][ext][query]'
-                }
-            }
-        ]
+                    filename: 'assets/fonts/[name][ext][query]',
+                },
+            },
+        ],
+    },
+    resolve: {
+        // Add the following alias to resolve the 'sass' module correctly
+        alias: {
+            sass: require.resolve('sass'),
+        },
     },
     devServer: {
         static: {
-            directory: path.join(__dirname, 'dist')
+            directory: path.join(__dirname, 'dist'),
         },
         watchFiles: {
             paths: ['src/**/*.*', 'assets/scss/**/*.*'],
             //☝🏽 Enables HMR in these folders
             options: {
-                usePolling: true
-            }
-        }
+                usePolling: true,
+            },
+        },
     },
-    stats: 'errors-only'
+    stats: 'errors-only',
     //☝🏽 For a cleaner dev-server run
 };
